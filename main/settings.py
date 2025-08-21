@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$62g4o0g@(dgd+ft+-q^(t7n+@20g%q^k)lgwhfxttkkr^&4x$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["68.183.132.17", "api.smartcontractbets.xyz","127.0.0.1"]
+ALLOWED_HOSTS = ["68.183.132.17", "api.smartcontractbets.xyz","127.0.0.1", "209.97.178.125"]
 
 
 # Application definition
