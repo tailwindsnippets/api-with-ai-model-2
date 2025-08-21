@@ -23,7 +23,16 @@ from rest_framework.response import Response
 from rest_framework import status
 
 # Load the trained model once
-model = load("malawi_nutrient_model.joblib")
+#model = load("malawi_nutrient_model.joblib")
+
+_model = None
+
+def get_model():
+    global _model
+    if _model is None:
+        from joblib import load
+        _model = load("malawi_nutrient_model.joblib")
+    return _model
 
 # Baseline nutrient values
 DEFAULT_BASELINE = {
@@ -78,6 +87,7 @@ FOOD_GROUP_NUTRIENTS = {
 }
 
 def predict_nutrients(location, food_group, percentage_change, baseline_data_values=None):
+    model = get_model()  # load lazily
     if baseline_data_values is None:
         baseline_data_values = {}
     features = DEFAULT_BASELINE.copy()
@@ -98,6 +108,7 @@ def predict_nutrients(location, food_group, percentage_change, baseline_data_val
     X_new = pd.DataFrame(data)
     prediction = model.predict(X_new)
     return {"intervention_pred": prediction[0].tolist(), "baseline_pred": BASELINE_DATA}
+
 
 # --- Django view ---
 @api_view(['POST'])
