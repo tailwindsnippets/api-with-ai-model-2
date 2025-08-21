@@ -33,7 +33,7 @@
     # Copy application code
     COPY . /app/
     
-    EXPOSE 8000
+    EXPOSE 8001
 
     CMD ["sh", "-c", "echo 'Container ready. Use docker-compose commands to start services.'"]
     #CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "main.wsgi:application"]
