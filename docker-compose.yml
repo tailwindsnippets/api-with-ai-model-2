@@ -8,32 +8,7 @@ services:
       - .:/app
     ports:
       - "8000:8000"
-    depends_on:
-      - redis
     env_file:
       - .env
 
-  celery:
-    build: .
-    command: celery -A main worker --loglevel=info --pool=solo
-    volumes:
-      - .:/app
-    depends_on:
-      - redis
-    env_file:
-      - .env
 
-  flower:
-    build: .
-    command: celery -A main flower --port=5555
-    ports:
-      - "5555:5555"
-    depends_on:
-      - redis
-    env_file:
-      - .env
-
-  redis:
-    image: redis:alpine
-    ports:
-      - "6379:6379"
