@@ -1,0 +1,69 @@
+1
+00:00:00,000 --> 00:00:02,200
+Want to boost your email marketing game?
+
+2
+00:00:02,200 --> 00:00:05,320
+Here's how to automate it in just three simple steps.
+
+3
+00:00:05,320 --> 00:00:07,720
+Step one, choose your automation tool.
+
+4
+00:00:07,720 --> 00:00:09,960
+Tools like N8n make it easy.
+
+5
+00:00:09,960 --> 00:00:12,440
+Step two, set your triggers.
+
+6
+00:00:12,440 --> 00:00:14,880
+Decide what actions will kick off your emails.
+
+7
+00:00:14,880 --> 00:00:18,879
+For example, a new subscriber can trigger a welcome series.
+
+8
+00:00:18,879 --> 00:00:21,200
+Step three, create your content.
+
+9
+00:00:21,200 --> 00:00:24,000
+Craft engaging emails that resonate with your audience.
+
+10
+00:00:24,000 --> 00:00:25,559
+Personalization is key.
+
+11
+00:00:25,559 --> 00:00:27,799
+By using automation, you can save time
+
+12
+00:00:27,799 --> 00:00:29,240
+and enhance engagement.
+
+13
+00:00:29,280 --> 00:00:30,879
+No more manual sends.
+
+14
+00:00:30,879 --> 00:00:33,439
+Now your emails work smarter for you.
+
+15
+00:00:33,439 --> 00:00:35,480
+Ready to supercharge your campaigns?
+
+16
+00:00:35,480 --> 00:00:39,119
+Like and subscribe for more tips to elevate your marketing.
+
+17
+00:00:39,119 --> 00:00:40,080
+Let's automate.
+
+
